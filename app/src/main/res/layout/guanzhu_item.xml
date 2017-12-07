@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <com.facebook.drawee.view.SimpleDraweeView
+         android:layout_width="@dimen/x150"
+         android:layout_height="@dimen/x150"
+         android:src="@mipmap/raw_1500022714"
+         android:padding="@dimen/x5"
+         android:id="@+id/gz_icon"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="@dimen/x20"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_toRightOf="@+id/gz_icon"
+        android:layout_centerVertical="true"
+        android:id="@+id/ll"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阿诺玛斯丁"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:layout_marginTop="@dimen/y22"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="64dp"
+        android:id="@+id/gz_time"
+        android:layout_marginRight="64dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:text="time" />
+    <ImageView
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/y40"
+        android:src="@mipmap/raw_1499943790"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x20"
+        android:id="@+id/imageView" />
+</RelativeLayout>

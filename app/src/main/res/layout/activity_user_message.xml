@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.yikezhong.UserMessageActivity">
+    <com.example.asus.yikezhong.zidingyi.View_Title
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:id="@+id/view_title"
+        ></com.example.asus.yikezhong.zidingyi.View_Title>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%">
+
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/lin_settingLogin"
+            app:layout_marginLeftPercent="5%"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            app:layout_marginRightPercent="12%"
+            app:layout_widthPercent="10%"
+            app:layout_heightPercent="14%w"
+            android:id="@+id/login"
+            android:src="@mipmap/raw_1499936862"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dip"
+            android:layout_height="50dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="头像"
+            app:layout_marginRightPercent="4%"
+            android:layout_centerVertical="true"
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        android:id="@+id/dd"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="昵称"
+            android:id="@+id/nc"
+            app:layout_marginRightPercent="4%"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+
+

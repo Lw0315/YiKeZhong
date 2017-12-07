@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.asus.yikezhong"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 101
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "1NzYY9NDYBA5chA6KdQAO4",
+                GETUI_APP_KEY   : "M1PmgMIwui5z0eND1JYo48",
+                GETUI_APP_SECRET: "2PWdThho4z6iNSM3x3l8i2"
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+    }
+    buildToolsVersion '27.0.1'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:27.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.getui:sdk:2.11.1.0'
+    compile name: 'SMSSDK-3.0.0', ext: 'aar'
+    implementation 'com.jcodecraeer:xrecyclerview:1.3.2'
+    compile project(path: ':slidingmenu')
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.yancy.imageselector:imageselector:1.3.3'
+    compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.6'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.dou361.ijkplayer-armv7a:jjdxm-ijkplayer-armv7a:1.0.0'
+    //对应ijkplayer的  compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.0'
+    compile 'com.dou361.ijkplayer-armv5:jjdxm-ijkplayer-armv5:1.0.0'
+    //对应ijkplayer的  compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.0'
+    compile 'com.dou361.ijkplayer-arm64:jjdxm-ijkplayer-arm64:1.0.0'
+    //对应ijkplayer的  compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.0'
+    compile 'com.dou361.ijkplayer-x86:jjdxm-ijkplayer-x86:1.0.0'
+    //对应ijkplayer的  compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.0'
+    compile 'com.dou361.ijkplayer-x86_64:jjdxm-ijkplayer-x86_64:1.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.amap.api:location:latest.integration'
+}

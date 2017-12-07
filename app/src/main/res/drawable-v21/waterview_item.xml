@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ripple 是5.0才出现的新标签-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#cccccc"
+    tools:targetApi="lollipop">
+    <item
+        android:id="@android:id/mask"
+        android:drawable="@android:color/black"
+        tools:ignore="NewApi" />
+</ripple>

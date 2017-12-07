@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YiKeZhong</string>
+    <string name="title_activity_zhu">ZhuActivity</string>
+    <string name="title_activity_zhu_ye">ZhuYeActivity</string>
+</resources>

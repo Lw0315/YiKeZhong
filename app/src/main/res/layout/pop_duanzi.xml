@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="@dimen/x350"
+        android:layout_height="@dimen/y50"
+        android:text="是否保存到草稿箱?"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:background="@color/grey_50"/>
+
+    <TextView
+        android:id="@+id/tv_pop_duanzi_1"
+        android:layout_width="@dimen/x350"
+        android:layout_height="@dimen/y50"
+        android:text="保存"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:background="@color/grey_50"/>
+
+    <TextView
+        android:id="@+id/tv_pop_duanzi_2"
+        android:layout_width="@dimen/x350"
+        android:layout_height="@dimen/y50"
+        android:text="不保存"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_price_red"
+        android:gravity="center"
+        android:background="@color/grey_50"/>
+
+    <TextView
+        android:id="@+id/tv_pop_duanzi_3"
+        android:layout_width="@dimen/x350"
+        android:layout_height="@dimen/y50"
+        android:text="取消"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/grey_50"/>
+</LinearLayout>
